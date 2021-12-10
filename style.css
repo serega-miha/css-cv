@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+/* *{
+    ОБНУЛЕНИЕ ВСЕХ ОТСТУПОВ ПО УМОЛЧАНИЮ
+    padding: 0;
+    margin: 0;
+} */
+
+body{
+    background-color: #f1f1f1;
+    color:#0f141e;
+
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+
+/* font: normal 16px 'Roboto', sans-serif; дублирует верхние записи */
+
+}
+a{
+  color: black;
+  text-decoration: none; 
+   /*ссылку сделали черной и убрали черту под ней  */
+}
+a:hover {
+    text-decoration: underline;
+    /* при наведении подчеркивает ссылку */
+}
+a:active{
+    color: blue;
+    /* при нажатии становиться таким цветом */
+}
+a:visited{
+color: rgb(156, 226, 43);
+/* делает такой цвет при посещенной ссылки */
+}
+
+
+
+
+.avatar{
+width: 200px;
+border-radius: 28px;
+box-shadow: 4px 4px 14px rgba(0,0,0,0.25
+);
+}
+
+.info {
+    display: flex;
+   margin-bottom: 20px; 
+}
+
+@media (max-widht: 700px){
+    .info{
+        text-align: center;
+        display: block;
+    }
+}
+
+
+.info-text{
+    margin-left: 40px;
+}
+.info-text h4{
+    margin-bottom: 10px;
+}
+
+
+.info p{
+
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: ;
+    text-decoration: ;
+    /* text-transform: uppercase; все с большой буквы */
+    /* letter-spacing: 5px;  растояние между символами*/
+    /* word-spacing: 20px растояния между словами; */
+
+}
+ 
+/* Box model */
+
+.container{
+width: 750px;
+margin: auto; 
+padding-top: 30px;
+
+}
+/* 
+.social{
+background: green;
+padding: 15px;
+
+
+margin: 20px;
+
+border: 5px solid red;
+
+
+
+} */
+
+
+
+.box-model >div{
+    /* float мы создали 4 блока по 25% и выстроили их в ряд */
+    float: left;
+background: black;
+height: 200px;
+width: 25%;
+border: 4px solid blue;
+box-sizing: border-box;
+/* border-box мы снова выровнили все в линию */
+
+}
+
+.bg-yellow{
+    background: #fff9dc;
+}
+.bg-green{
+    background: #e5ffe7;
+}
+.bg-red{
+    background: #ffe5e5;
+}
+
+
+.card{
+    padding: 15px 20px;
+    
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.list{
+ padding: 0 20px;   
+}
+.list li{
+  color: #86898f;
+  margin-bottom: 10px;  
+}
+
+.table{
+   width: 100%; 
+}
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2){
+    color: #86898f;
+    /* Псевдо силектор мы указали что в table in td взять второ
+     элемен и покрасить в такой цвет */
+}
+
+/* .table tr:nth-child(odd){
+    background: blueviolet;
+}   мы выделяем в таблице нечетные строчки*/
+
+
+.link-list{
+list-style: none;
+
+}
+.link-list li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.contact h2{
+    text-align: center;
+}
+.form-group label{
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+/* украшали названия ваше имя... */
+}
+.form-group input,
+.form-group textarea{
+    width: 85%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit; 
+}
+
+.row{
+    display: flex;
+    margin-bottom: 20px;
+}
+.row >.form-group{
+    width: 50%;
+    margin-right: 20px;
+}
+.btn{
+    background: #111;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+/* position */
+/*
+.position{
+    position: relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+
+}
+ fixed это создание кнопки которая тебя приследует
+.box{
+    position: fixed;
+ 
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background: lightcoral;
+}
+ */
+
+
+
+
+
